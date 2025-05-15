@@ -101,13 +101,13 @@ header {
 
 .banner-content {
     padding: 110px 80px;
-    height: 526px;
+    /* height: 526px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 64px;
+    gap: 54px;
 
     h1 {
         font-family: "Roboto", sans-serif;
@@ -124,6 +124,7 @@ header {
         line-height: 1.4;
         font-size: 18px;
         color: #6D758F;
+        margin: 0;
     }
 
     .banner-btns {
@@ -245,11 +246,14 @@ header {
         }
     }
 }
+
 .details-container {
     background-color: #F1F3F7;
 }
+
 .details-content {
     padding: 100px 167px;
+
     h2 {
         font-weight: 800;
         line-height: 40px;
@@ -266,15 +270,18 @@ header {
         font-size: 18px;
         color: #6D758F;
         text-align: center;
+        margin: 10px 0 20px;
     }
-    .details-cards{
+
+    .details-cards {
         border-radius: 10px;
         padding: 64px;
         box-shadow: 0 1px 4px 0 #19213D14;
         background-color: #6D758F;
         display: flex;
         gap: 22px;
-        .d-card{
+
+        .d-card {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -284,6 +291,7 @@ header {
             border-radius: 10px;
             border: 1px solid #B4B9C9;
             padding: 32px 24px;
+
             h3 {
                 font-weight: 600;
                 line-height: 40px;
@@ -291,6 +299,7 @@ header {
                 color: #FFFFFF;
                 margin: 0;
             }
+
             h4 {
                 font-weight: 800;
                 line-height: 22px;
@@ -298,16 +307,17 @@ header {
                 color: #FFFFFF;
                 margin: 0;
             }
-    
+
             p {
                 font-weight: 400;
                 line-height: 24px;
                 font-size: 16px;
                 color: #FFFFFF;
                 text-align: start;
-                margin: 0;
+                margin: 10px 0;
             }
-            .more{
+
+            .more {
                 display: flex;
                 align-items: center;
                 gap: 6px;
@@ -323,6 +333,7 @@ header {
 
 .gallary-content {
     padding: 100px 167px;
+
     h2 {
         font-weight: 800;
         line-height: 40px;
@@ -339,30 +350,107 @@ header {
         font-size: 18px;
         color: #6D758F;
         text-align: center;
+        margin: 10px 0 20px;
     }
-    
+
     .dynamic-card-gallary {
         column-count: 3;
-      }
-      .i-card{
-      height:354px;
-      width:100%;
-      background:gray;
-      margin:8px 10px;
-      display:inline-block;
-      img{
-            
-            width:100%;
-            height:100%;
-            object-fit:cover;
-      }
-      }
-      .dynamic-card-gallary .card-bg{
-      height:477px;
-      }
-      
-      .dynamic-card-gallary .card-sm{
-      height:231px;
-      }
+    }
+
+    .i-card {
+        height: 354px;
+        width: 100%;
+        background: gray;
+        margin: 8px 10px;
+        display: inline-block;
+
+        img {
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dynamic-card-gallary .card-bg {
+        height: 477px;
+    }
+
+    .dynamic-card-gallary .card-sm {
+        height: 231px;
+    }
+
+}
+
+.quote-container {
+    background-color: #F1F3F7;
+}
+
+.quote-content {
+    padding: 100px 167px;
+
+    h2 {
+        font-weight: 800;
+        line-height: 40px;
+        font-size: 36px;
+        color: #6D758F;
+        margin: 0;
+        text-align: center;
+    }
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 18px;
+        color: #6D758F;
+        text-align: center;
+        margin: 10px 0 20px;
+    }
+
+    .quote-cards {
+        display: flex;
+        gap: 22px;
+
+        .q-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 353px;
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 4px 0 #19213D14;
+            border-radius: 8px;
+            border: 1px solid #E1E4ED;
+            padding: 24px 24px 27px 24px;
+
+            .quote {
+                font-weight: 400;
+                line-height: 22px;
+                font-size: 14px;
+                color: #6D758F;
+            }
+
+            .name-title {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-left: 5px;
+
+                .name {
+                    font-weight: 600;
+                    line-height: 22px;
+                    font-size: 16px;
+                    color: #6D758F;
+                }
+
+                .title {
+                    font-weight: 400;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #B4B9C9;
+                }
+            }
+        }
+    }
 
 }
